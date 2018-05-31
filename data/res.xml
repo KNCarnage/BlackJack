@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<resources>
+	<set path = "images" />
+	<atlas>
+		<image file="cards.png"  cols = "13" rows = "4" cardwidth = "180" cardheight = "251"/>
+		<image file="cardsback.png" cols = "4" cardwidth = "180" cardheight = "251"/>
+		<image file="blackjack.png"/>	
+		<image file="button.png"/>
+		<image file="msgbox.png"  guideX1="25" guideX2="475" guideY1="25" guideY2="75"/>
+		<image file="plusminus.png" cols = "2"/>
+	</atlas>
+	<set path = "fonts" />
+	<font file="main.fnt" />	
+</resources>
