@@ -480,6 +480,7 @@ public:
 			Shuf[i].iValor = i;
 			Shuf[i].pCard.x = cara;
 			Shuf[i].pCard.y = pinta;
+
 			cara = cara + 1;
 
 			if (cara > 12)
@@ -1014,8 +1015,13 @@ public:
 		{
 			if (Mazo[Mano->inuse[i]].pCard.x == ACE)
 			{
-				valor = valor + 11;
-				has = has + 1;
+				if (has)
+					valor = valor + 1;
+				else
+				{
+					valor = valor + 11;
+					has = has + 1;
+				}
 			}
 			else if ((Mazo[Mano->inuse[i]].pCard.x == JACK) || (Mazo[Mano->inuse[i]].pCard.x == QUEEN) ||
 				(Mazo[Mano->inuse[i]].pCard.x == KING))
